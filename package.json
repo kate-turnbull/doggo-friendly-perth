@@ -1,0 +1,51 @@
+{
+  "name": "react-app-oauth-boilerplate",
+  "version": "1.0.0",
+  "description": "A template to use to spin up a React/Express App with Auth0",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "jest --watchAll",
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "webpack --watch",
+    "dev:server": "nodemon --watch server",
+    "lint": "eslint --ext .js,.jsx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kate-turnbull/React-App-Oauth-Boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kate-turnbull/React-App-Oauth-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/kate-turnbull/React-App-Oauth-Boilerplate#readme",
+  "dependencies": {
+    "@auth0/auth0-react": "^1.9.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "knex": "^1.0.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
+    "redux-thunk": "^2.4.1",
+    "rsuite": "^5.6.4",
+    "superagent": "^7.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.10.0",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
