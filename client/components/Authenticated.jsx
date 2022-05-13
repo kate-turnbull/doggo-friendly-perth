@@ -7,8 +7,8 @@ const isAuthenticated = () => {
     return isAuthenticated
 }
 
-export function IfAuthenticated ({ children }) {
+export function IfAuthenticated({ children }) {
     return isAuthenticated()
-    ? <>{ children }</>
-    : null
+        ? <>{children}</>
+        : null
 }

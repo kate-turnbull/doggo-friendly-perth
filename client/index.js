@@ -1,19 +1,21 @@
 import React from 'react'
-import { render } from 'react-dom'
 import { Auth0Provider } from '@auth0/auth0-react'
 import { Provider } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom'
 
+import ReactDOM from 'react-dom'
 import App from './components/App'
+import Walks from './components/Walks'
+import Beaches from './components/Beaches'
+import MyNav from './components/MyNav'
+import { render } from 'react-dom'
 
-document.addEventListener('DOMContentLoaded', () => {
-    render(
-        <Auth0Provider
-        domain="dev-16vcgw7c.us.auth0.com"
-        clientId="5spd1v7AZB9WdqWDLZiXtMZpzs0YW2C0"
-        redirectUri={window.location.origin}
-      >
-        <App />,
-        </Auth0Provider>,
-        document.getElementById('app')
-    )
-})
+const root = ReactDOM.createRoot(document.getElementById('root')
+);
+root.render(
+  <React.StrictMode>
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
+)

@@ -1,10 +1,10 @@
 import React from 'react'
 import { ReactDOM } from 'react'
 import App from './App'
-import { AuthOProvider} from '@auth0/auth0-react'
+import { AuthOProvider } from '@auth0/auth0-react'
 
-ReacrDOM.render(
-    <Auth0Provider
+ReactDOM.render(
+  <Auth0Provider
     domain="dev-16vcgw7c.us.auth0.com"
     clientId="5spd1v7AZB9WdqWDLZiXtMZpzs0YW2C0"
     redirectUri={window.location.origin}

@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server",
     "test": "jest --watchAll",
+    "watch": "webpack --watch",
     "dev": "run-p dev:client dev:server",
     "dev:client": "webpack --watch",
     "dev:server": "nodemon --watch server",
@@ -28,7 +29,7 @@
     "knex": "^1.0.3",
     "morgan": "^1.10.0",
     "pg": "^8.7.3",
-    "react": "^17.0.2",
+    "react": "^18.1.0",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.2",
